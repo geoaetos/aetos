@@ -1,8 +1,15 @@
 <!DOCTYPE html> <html><head><meta charset="utf-8"><title>Related Posts</title>
 	<meta content='width=device-width, initial-scale=1' name='viewport'>
 	<style>
-	
 h4.related-post-item-tooltip {
+    padding: 6px 14px;
+    background: rgba(98, 103, 103, 0.46);
+    bottom: 0;
+    margin: 0;
+    color: white;
+}li.related-post-item {
+    list-style: none;
+}h4.related-post-item-tooltip {
     position: absolute;
     z-index: 2;
     bottom: 3px;
@@ -11,24 +18,22 @@ h4.related-post-item-tooltip {
     margin: 0;
     box-sizing: border-box;
     width: 100%;
-}.related-posts li h4,.tl-topost-item .top-right-content, .topCaro-meta {
-    position: absolute;
-    z-index: 2;
-    bottom: 20px;
-    transition: bottom 0.5s cubic-bezier(.55,0,.1,1);
-    left: 0;
-    margin: 0;
-    box-sizing: border-box;
-    padding: 0 30px;
-    width: 100%;
-}.related-posts li h4 {
-    padding: 6px 14px;
-    background: rgba(98, 103, 103, 0.46);
-    bottom: 0;
-    margin: 0;
-    color: white;
-}
-ul.related-post-style-5 { position: relative;overflow: hidden;margin-right: -25px;}li.related-post-item {display: block;width: 33.3333333333%;float: left;}.li-rinner {margin-right: 25px;margin-top: 7px;margin-bottom: 21px;position: relative;}img.related-post-item-thumbnail {width: 100%; max-height: 157px;}h4.related-post-item-tooltip {position: absolute; z-index: 2;bottom: 3px;transition: bottom 0.5s cubic-bezier(.55,0,.1,1);left: 0;margin: 0;box-sizing: border-box; width: 100%;}#related-posts li h4, .tl-postCarousel-F .car-item h3, .tl-topost-item .top-right-content, .topCaro-meta {position: absolute;z-index: 2;bottom: 20px;transition: bottom 0.5s cubic-bezier(.55,0,.1,1);left: 0;margin: 0;box-sizing: border-box;padding: 0 30px;width: 100%;}li.related-post-item {list-style: none;}@media only screen and (max-width:767px){.tl-relatedthumb img { max-height: 200px;}#related-posts li { width: 50%;}.tl-relatedthumb img {max-height:150px;}li h4 {font-size: 13px;}}#related-posts li h4 a{color: white;transition: all 0.3s ease-in-out;}</style></head><body><div id="related-post" class="related-post"></div><script>
+}.Blog, .main-and-sidebar, .status-msg-body, .tl-wspace, body, img, pre {
+    position: relative;
+}h4.related-post-item-tooltip {
+    font: normal normal 12px Lato,sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+  
+}#related-posts li {
+    display: block;
+    width: 33.3333333333%;
+    float: left;
+}img.related-post-item-thumbnail {
+    max-width: 100%; border: none;}.li-rinner { margin-right: 25px; margin-top: 7px;  margin-bottom: 21px; position: relative;}ul.related-post-style-5 {position: relative;overflow: hidden;margin-right: -25px;}@media only screen and (max-width: 767px){
+.tl-relatedthumb img { max-height: 200px;}}@media only screen and (max-width: 479px) {
+#related-posts li { float: none;width: 100%; margin: 0;}}</style></head><body>
+	<div id="related-post" class="related-post"></div><script>
 function getQueryVariable(variable) {
   var query = window.location.search.substring(1);
   var vars = query.split("&");
