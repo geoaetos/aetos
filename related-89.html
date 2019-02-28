@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>Related Posts</title><meta content='width=device-width, initial-scale=1' name='viewport'><style>div#related-posts ul {position: relative;overflow: hidden;margin-right: -25px;}#related-posts li {display: block;width: 33.3333333333%;float: left;}.li-rinner {margin-right: 25px;margin-top: 7px; margin-bottom: 21px;position: relative;}.tl-relatedthumb img {width: 100%;max-height: 157px;}#related-posts li h4 { padding: 6px 14px; background: rgba(98, 103, 103, 0.46);bottom: 0; margin: 0;color: white;}#related-posts li h4 {padding: 6px 14px;background: rgba(98, 103, 103, 0.46);bottom: 0;margin: 0;color: white;}#related-posts li h4, .PopularPosts ul li .item-title, .tl-recentMag h3 {font: normal normal 12px Lato,sans-serif;font-weight: 600;font-size: 13px;margin: 0 0 5px;}#related-posts li h4, .tl-postCarousel-F .car-item h3, .tl-topost-item .top-right-content, .topCaro-meta {position: absolute;z-index: 2;bottom: 20px;transition: bottom 0.5s cubic-bezier(.55,0,.1,1);left: 0;margin: 0;box-sizing: border-box;padding: 0 30px;width: 100%;}.clear {clear: both;}
+
+@media only screen and (max-width: 767px){.tl-relatedthumb img { max-height: 200px;}#related-posts li { width: 50%;}.tl-relatedthumb img {max-height: 160px;}li h4 {font-size: 13px;}}
+
+@media only screen and (max-width: 479px){#related-posts li {float: none;width: 100%;margin: 0;}}
+@media screen and (max-width:966px){}
+@media screen and (max-width:610px){}
+@media screen and (max-width:420px){}
+@media screen and (max-width:420px){}	
+</style></head><body><div id="related-post" class="related-post"></div><script>
+function getQueryVariable(variable) {
+  var query = window.location.search.substring(1);
+  var vars = query.split("&");
+  for (var i=0;i<vars.length;i++) {
+    var pair = vars[i].split("=");
+    if(pair[0] == variable){return pair[1];}
+  }
+  return(false);
+}
+var labelArray = [getQueryVariable("label")],
+    relatedPostConfig = {
+	homePage: getQueryVariable("url"),	
+        numPosts: 10,
+        summaryLength: 0,
+        widgetStyle: 5,
+        callBack: function() {}
+    };</script>   eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('E 16,17;(M(n,m,k){E d={1j:"",1k:1,18:"",W:5,19:1J,X:"1l",C:1K,1m:"H:R/S;T,1L/1M+1N",1n:"8-i",1o:1a,1p:"",1q:M(){}};1b(E f U 1c){d[f]=(1c[f]=="1O")?d[f]:1c[f]}E j=M(a){E b=m.1P("1d");b.1Q="1e/1R";b.I=a;b.1S=1T;k.1U(b)},o=M(b,a){Y Z.1r(Z.1s()*(a-b+1))+b},l=M(a){E p=a.V,c,b;N(p===0){Y 1a}1V(--p){c=Z.1r(Z.1s()*(p+1));b=a[p];a[p]=a[c];a[c]=b}Y a},e=(1W 1f=="1X"&&1f.V>0)?"/-/"+l(1f)[0]:"",h=M(b){E c=b.1t.1Y$1Z.$t-d.W,a=o(1,(c>0?c:1));j(d.18.O(/\\/$/,"")+"/1u/1v/1w/J"+e+"?P=1x-U-1d&1y=1z&20-21="+a+"&1A-1B="+d.W+"&1C=17")},g=M(z){E s=1g.22(d.1n),x=l(z.1t.23),A=d.1k,c=d.1j+\'<1D 7="8-i-24-\'+A+\'">\',b=d.1o?\' 25="26"\':"",y=\'<F 7="27"></F>\',v,t,w,r,u;N(!s){Y}1b(E q=0;q<d.W;q++){N(q==x.V){28}t=x[q].G.$t;w=(d.X!=="1l"&&d.X<t.V)?t.1E(0,d.X)+"&1F;":t;r=("1G$Q"U x[q]&&d.C!==1a)?x[q].1G$Q.29.O(/\\/s[0-9]+(\\-c)?/,"/s"+d.C+"-c"):d.1m;u=("J"U x[q]&&d.19>0)?x[q].J.$t.O(/<2a ?\\/?>/g," ").O(/<.*?>/g,"").O(/[<>]/g,"").1E(0,d.19)+"&1F;":"";1b(E p=0,a=x[q].1h.V;p<a;p++){v=(x[q].1h[p].2b=="2c")?x[q].1h[p].K:"#"}N(A==2){c+=\'<D><10 P="" 7="8-i-B-Q" I="H:R/S;T,11/12=" H-I="\'+r+\'"  13="\'+d.C+\'" 14="\'+d.C+\'"><a 7="8-i-B-G" G="\'+t+\'" K="\'+v+\'"\'+b+">"+w+\'</a><L 7="8-i-B-J"><L 7="8-i-B-J-1e">\'+u+\'</L> <a K="\'+v+\'" 7="8-i-B-2d"\'+b+">"+d.1p+"</a></L>"+y+"</D>"}15{N(A==3||A==4){c+=\'<D 7="8-i-B" 1H="0"><a 7="8-i-B-G" K="\'+v+\'"\'+b+\'><10 P="" 7="8-i-B-Q" I="H:R/S;T,11/12=" H-I="\'+r+\'"  13="\'+d.C+\'" 14="\'+d.C+\'"></a><F 7="8-i-B-1i"><a 7="8-i-B-G" G="\'+t+\'" K="\'+v+\'"\'+b+">"+w+"</a></F>"+y+"</D>"}15{N(A==5){c+=\'<D 7="8-i-B" 1H="0"><F 7="D-2e"><a 7="8-i-B-2f" K="\'+v+\'" G="\'+t+\'"\'+b+\'><F 7="2g-2h"><10 P="" 7="8-i-B-Q" I="H:R/S;T,11/12=" H-I="\'+r+\'"  13="\'+d.C+\'" 14="\'+d.C+\'"></F><1I 7="8-i-B-1i">\'+w+"</1I></a></F>"+y+"</D>"}15{N(A==6){c+=\'<D><a 7="8-i-B-G" G="\'+t+\'" K="\'+v+\'"\'+b+">"+w+\'</a><F 7="8-i-B-1i"><10 P="" 7="8-i-B-Q"  I="H:R/S;T,11/12=" H-I="\'+r+\'" 13="\'+d.C+\'" 14="\'+d.C+\'"><L 7="8-i-B-J"><L 7="8-i-B-J-1e">\'+u+"</L></L>"+y+"</F></D>"}15{c+=\'<D><a G="\'+t+\'" K="\'+v+\'"\'+b+">"+w+"</a></D>"}}}}}s.2i=c+="</1D>"+y;d.1q()};16=h;17=g;j(d.18.O(/\\/$/,"")+"/1u/1v/1w/J"+e+"?P=1x-U-1d&1y=1z&1A-1B=0&1C=16")})(2j,1g,1g.2k("2l")[0]);',62,146,'|||||||class|related||||||||||post|||||||||||||||||||item|thumbnailSize|li|var|div|title|data|src|summary|href|span|function|if|replace|alt|thumbnail|image|png|base64|in|length|numPosts|titleLength|return|Math|img|R0lGODlhAQABAAD|ACwAAAAAAQABAAACADs|width|height|else|randomRelatedIndex|showRelatedPost|homePage|summaryLength|false|for|relatedPostConfig|script|text|labelArray|document|link|tooltip|widgetTitle|widgetStyle|auto|noImage|containerId|newTabLink|moreText|callBack|floor|random|feed|feeds|7203184275858919201|posts|json|orderby|updated|max|results|callback|ul|substring|hellip|media|tabindex|h4|300|200|iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAA3NCSVQICAjb4U|gAAAADElEQVQImWOor68HAAL|AX7vOF2TAAAAAElFTkSuQmCC|undefined|createElement|type|javascript|async|true|appendChild|while|typeof|object|openSearch|totalResults|start|index|getElementById|entry|style|target|_blank|clear|break|url|br|rel|alternate|more|rinner|wrapper|tl|relatedthumb|innerHTML|window|getElementsByTagName|head'.split('|'),0,{}))     
+</script></body></html>
