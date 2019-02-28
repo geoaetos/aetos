@@ -1,14 +1,8 @@
-<!DOCTYPE html>
-<html><head><meta charset="utf-8"><title>Related Posts</title>
+<!DOCTYPE html> <html><head><meta charset="utf-8"><title>Related Posts</title>
+	<meta content='width=device-width, initial-scale=1' name='viewport'>
+	<style>
 	
-	<meta content='width=device-width, initial-scale=1' name='viewport'><style>
-	#related-posts li h4 {
-    padding: 6px 14px;
-    background: rgba(98, 103, 103, 0.46);
-    bottom: 0;
-    margin: 0;
-    color: white;
-}h4.related-post-item-tooltip {
+h4.related-post-item-tooltip {
     position: absolute;
     z-index: 2;
     bottom: 3px;
@@ -17,7 +11,7 @@
     margin: 0;
     box-sizing: border-box;
     width: 100%;
-}#related-posts li h4,.tl-topost-item .top-right-content, .topCaro-meta {
+}.related-posts li h4,.tl-topost-item .top-right-content, .topCaro-meta {
     position: absolute;
     z-index: 2;
     bottom: 20px;
@@ -27,6 +21,12 @@
     box-sizing: border-box;
     padding: 0 30px;
     width: 100%;
+}.related-posts li h4 {
+    padding: 6px 14px;
+    background: rgba(98, 103, 103, 0.46);
+    bottom: 0;
+    margin: 0;
+    color: white;
 }
 ul.related-post-style-5 { position: relative;overflow: hidden;margin-right: -25px;}li.related-post-item {display: block;width: 33.3333333333%;float: left;}.li-rinner {margin-right: 25px;margin-top: 7px;margin-bottom: 21px;position: relative;}img.related-post-item-thumbnail {width: 100%; max-height: 157px;}h4.related-post-item-tooltip {position: absolute; z-index: 2;bottom: 3px;transition: bottom 0.5s cubic-bezier(.55,0,.1,1);left: 0;margin: 0;box-sizing: border-box; width: 100%;}#related-posts li h4, .tl-postCarousel-F .car-item h3, .tl-topost-item .top-right-content, .topCaro-meta {position: absolute;z-index: 2;bottom: 20px;transition: bottom 0.5s cubic-bezier(.55,0,.1,1);left: 0;margin: 0;box-sizing: border-box;padding: 0 30px;width: 100%;}li.related-post-item {list-style: none;}@media only screen and (max-width:767px){.tl-relatedthumb img { max-height: 200px;}#related-posts li { width: 50%;}.tl-relatedthumb img {max-height:150px;}li h4 {font-size: 13px;}}#related-posts li h4 a{color: white;transition: all 0.3s ease-in-out;}</style></head><body><div id="related-post" class="related-post"></div><script>
 function getQueryVariable(variable) {
